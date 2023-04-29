@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/NavBar";
 import { Box } from "@chakra-ui/react";
+import { NavBar } from "../features/navbar";
 
 function Layout() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Box padding={5}>
         <Outlet />
       </Box>
