@@ -1,4 +1,4 @@
-import { Platform } from "../models/Platform";
+import Platform from "../models/Platform";
 import { HStack, Icon } from "@chakra-ui/react";
 import {
   FaWindows,
