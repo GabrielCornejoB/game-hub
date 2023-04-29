@@ -11,9 +11,13 @@ interface Props {
 
 function GameCard({ game }: Props) {
   return (
-    <Card>
+    <Card height="100%">
       <Image src={getCroppedImageUrl(game.background_image)} />
-      <CardBody>
+      <CardBody
+        display="flex"
+        flexDirection="column"
+        justifyContent="space-between"
+      >
         <HStack justifyContent="space-between" marginBottom={3}>
           <PlatformIconList
             platforms={game.parent_platforms.map((p) => p.platform)}
@@ -22,8 +26,8 @@ function GameCard({ game }: Props) {
         </HStack>
         <Heading fontSize="2xl">
           <Link to={"/games/" + game.slug}>{game.name}</Link>
-          <Emoji rating={game.rating_top} />
         </Heading>
+        <Emoji rating={game.rating_top} />
       </CardBody>
     </Card>
   );

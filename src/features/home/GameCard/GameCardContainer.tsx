@@ -10,9 +10,9 @@ function GameCardContainer({ children }: Props) {
     <Box
       borderRadius={10}
       overflow="hidden"
+      transition="transform 0.2s ease-in-out"
       _hover={{
         transform: "scale(1.03)",
-        transition: "transform .15s ease-in",
       }}
     >
       {children}
