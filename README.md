@@ -1,6 +1,6 @@
 # **Game hub**
 
-Web application that consumes the rawg.io API to display videogames. You can check it up at: [GameHub](https://6-game-hub.vercel.app/).
+Web application based on Code With Mosh React 18 Intermediate course that consumes the rawg.io API to display videogames. You can check it up at: [GameHub](https://6-game-hub.vercel.app/).
 
 It was developed using the following tools:
 
